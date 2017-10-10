@@ -1,3 +1,13 @@
 <h1>
-  {{title}}
+  Node RSA Implementation
 </h1>
+<h4>Input</h4>
+<input type="text" [(ngModel)]="inp" >
+<button (click)="convert()" >Encrypt</button>
+<div *ngIf="out">
+  <h4>Output</h4>
+  <h6>Encrypted</h6>
+  <p>{{out}}</p>
+  <h6>Decrypted</h6>
+  <p>{{out2}}</p>
+</div>
